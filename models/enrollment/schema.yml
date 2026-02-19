@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: enrollment_mode
+  - name: course_enrollments
     description: "Enrollment mode of users in the course"
     columns:
       - name: org
@@ -10,15 +10,15 @@ models:
       - name: course_key
         description: "Course key"
         type: string
-      - name: actor_id
-        description: "Unique identifier for the user"
-        type: string
+      - name: actor_count
+        description: "Count of users"
+        type: integer
       - name: enrollment_mode
         description: "The enrollment mode of the user"
+        data_tests:
+          - accepted_values:
+              values: ["audit", "honor", "verified"]        
         type: string
-      - name: emission_time
-        description: "The time when the enrollment status was recorded"
-        type: timestamp
       - name: course_name
         description: "The name of the course"
         type: string
