@@ -12,7 +12,7 @@ models:
         type: string
       - name: actor_count
         description: "Count of users"
-        type: integer
+        type: int32
       - name: enrollment_mode
         description: "The enrollment mode of the user"
         data_tests:

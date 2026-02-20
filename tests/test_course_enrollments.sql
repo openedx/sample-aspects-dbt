@@ -1,4 +1,3 @@
-  -- average_attempts should only have one record for each problem_id.
   select
       count(*) as num_rows
   from

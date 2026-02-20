@@ -1,7 +1,7 @@
 select
     enrollment.org,
     enrollment.course_key,
-    sum(enrollment.actor_id) as actor_count,
+    count(enrollment.actor_id) as actor_count,
     enrollment.enrollment_mode,
     names.course_name,
     names.course_run
