@@ -33,6 +33,5 @@ target-path: "target"
 # files using the `{{ config(...) }}` macro.
 models:
   sample_aspects_dbt:
-    # Config indicated by + and applies to all files under models/problems/
-    problems:
-      +materialized: view
+    # Config indicated by + and applies to all files under models/
+    +materialized: view
