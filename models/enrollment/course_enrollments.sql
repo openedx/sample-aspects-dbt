@@ -4,7 +4,8 @@ select
     count(enrollment.actor_id) as actor_count,
     enrollment.enrollment_mode,
     names.course_name,
-    names.course_run
+    names.course_run,
+    enrollment.emission_time
 from {{ ref('dim_most_recent_enrollment') }} enrollment
 left join
     {{ ref('dim_course_names') }} names
